@@ -1,0 +1,6 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tesla callback</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px}code{display:block;word-break:break-all;background:#f3f3f3;padding:12px;border-radius:6px}</style></head>
+<body><h1>Tesla authorisation</h1><p>Copy this code:</p><code id="c">(no code in the URL)</code><p id="s"></p>
+<script>var p=new URLSearchParams(location.search);var c=p.get('code');if(c){document.getElementById('c').textContent=c;}var s=p.get('state');if(s){document.getElementById('s').textContent='state: '+s;}var e=p.get('error');if(e){document.getElementById('c').textContent='Error: '+e+' '+(p.get('error_description')||'');}</script>
+</body></html>
